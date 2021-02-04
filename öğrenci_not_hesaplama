@@ -1,0 +1,19 @@
+private void button1_Click(object sender, EventArgs e)
+        {
+            double s1, s2, proje, ortalama;
+            string durum;
+            s1 = Convert.ToDouble(textBox1.Text);
+            s2 = Convert.ToDouble(textBox2.Text);
+            proje = Convert.ToDouble(textBox3.Text);
+            ortalama = (s1 + s2 + proje) / 3;
+
+            if (ortalama >= 50) 
+                {
+                durum = "Geçtiniz";
+                }
+            else
+                 {
+                durum = "kaldınız";
+                 }
+            textBox4.Text = ortalama.ToString("0.0") +" -- " + durum;
+        }
